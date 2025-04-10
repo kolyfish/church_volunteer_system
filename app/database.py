@@ -1,7 +1,17 @@
+import os
 import sqlite3
 
 def initialize_database():
-    conn = sqlite3.connect('database/church.db')
+    # 確保資料夾存在，若不存在則建立
+    database_path = 'database'
+    if not os.path.exists(database_path):
+        os.makedirs(database_path)
+
+    # 設置資料庫檔案的完整路徑
+    db_file = os.path.join(database_path, 'church.db')
+
+    # 連接資料庫
+    conn = sqlite3.connect(db_file)
     cursor = conn.cursor()
 
     # 志工表
