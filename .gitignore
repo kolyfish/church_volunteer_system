@@ -1,0 +1,32 @@
+# 編譯生成的臨時文件
+*.py[cod]
+__pycache__/
+
+# 虛擬環境
+.venv/
+env/
+
+# VSCode 編輯器配置（如果項目成員各自使用不同配置，則一般忽略）
+.vscode/
+.idea/
+
+# 敏感信息文件
+.env
+.env.*
+
+# 測試的覆蓋率數據
+*.cover
+*.coverage
+.coverage.*
+.cache
+
+# pytype 分析文件
+.pytype/
+
+# MyPy 檢查結果
+.mypy_cache/
+
+#auth
+playwright/.auth
+
+.database/
