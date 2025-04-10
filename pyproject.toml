@@ -1,0 +1,26 @@
+[project]
+name = "church-volunteer-system"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "wupengyue",email = "kolyfish2@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "church_volunteer_system", from = "src"}]
+
+[tool.poetry.dependencies]
+
+flask = "^2.2.5"
+sqlalchemy = "^1.4.49"
+requests = "^2.31.0"
+line-bot-sdk = "^3.0.0"
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,33 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+
+
+# Virtual environment
+venv/
+.env/
+
+*.pyc
+__pycache__/
+*.pyo
+*.log
+
+# 忽略單元測試產生的覆蓋率檔案
+htmlcov/
+*.cover
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# 其他不應追蹤的檔案
+*.swp
+.DS_Store
+Thumbs.db
+.idea/
