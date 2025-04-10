@@ -3,7 +3,7 @@ import sqlite3
 
 def initialize_database():
     # 確保資料夾存在，若不存在則建立
-    database_path = 'database'
+    database_path = '../database'
     if not os.path.exists(database_path):
         os.makedirs(database_path)
 
